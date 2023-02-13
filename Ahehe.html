@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <div>
+            <h1> Poide po ba pa kiss?? </h1>
+            <p> Bawal mo pindutin close dito bonak ka ba? siyempre hindi </p>
+            <p> Kaya sagot </p>
+            <button id = "yesbutton"> Yes </button>
+            <button id = "no"> No </button>
+        </div>
+
+        <style>
+            div{
+                text-align: center;
+                vertical-align: middle;
+            }
+            #no{
+                position: absolute;
+            }
+        </style>
+        <script>
+            document.getElementById("yesbutton").addEventListener("click", function () {
+                alert("Ahehe I love you kiss mo den oten q <333")
+            });
+            
+        
+            var b = document.getElementById("no")
+            b.addEventListener("click",change);
+            function change() {
+                var i = Math.floor(Math.random()*1000)+1;
+                var j = Math.floor(Math.random()*700)+1;
+                b.style.left = i + "px";
+                b.style.top = j + "px";
+            }
+        </script>
+    </body>
+</html>
